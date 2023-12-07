@@ -13,6 +13,11 @@ public class UserServiceApplication {
 	public String welcome() {
 		return "Welcome to CI/CD of Jenkins";
 	}
+	
+	@RequestMapping("/home")
+	public String home() {
+		return "Hello I'm Akshay singh";
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(UserServiceApplication.class, args);
